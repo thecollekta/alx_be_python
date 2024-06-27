@@ -21,3 +21,5 @@ if time_bound == "yes":
     print(" that requires immediate attention today!")
 else:
     print(" Consider completing it when you have free time.")
+
+print("Reminder: ", reminder)
