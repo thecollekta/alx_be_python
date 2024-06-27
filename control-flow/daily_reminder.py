@@ -22,7 +22,7 @@ match priority:
         print("Invalid priority level entered.")
 
 # Check if the task is time-bound
-if time_bound_variable == "yes":
+if time_bound == "yes":
     print("that requires immediate attention today!")
 else:
     print("Consider completing it when you have free time.")
