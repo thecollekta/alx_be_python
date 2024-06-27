@@ -1,9 +1,19 @@
 # daily_reminder.py
 
-# Prompt user for input for a single task
+# Prompt user for task description
 task = input("Enter your task: ")
-priority = input("Priority (high/medium/low): ")
-time_bound = input("Is it time-bound? (yes/no): ")
+
+# Prompt user for task priority
+priority = input("Priority (high/medium/low): ").lower()
+
+# Prompt user to check if task is time-bound 
+time_bound = input("Is it time-bound? (yes/no): ").lower()
+
+# Initialise a reminder variable
+reminder = f"'{task}' has an undefined priority level."
+
+# Initialise a reminder variable
+reminder = f"'{task}' has an undefined priority level."
 
 # Process the task based on priority and time sensitivity
 match priority:
@@ -22,4 +32,5 @@ if time_bound == "yes":
 else:
     print(" Consider completing it when you have free time.")
 
-print("Reminder: ", reminder)
+# Provide a customised reminder
+print("\nReminder:", reminder)
