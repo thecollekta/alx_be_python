@@ -2,22 +2,22 @@
 
 # Prompt user for input for a single task
 
-task_variable = input("Enter your task: ")
-priority_variable = input("Priority (high/medium/low): ")
-time_bound_variable = input("Is it time-bound? (yes/no): ")
+task = input("Enter your task: ")
+priority = input("Priority (high/medium/low): ")
+time_bound = input("Is it time-bound? (yes/no): ")
 
 # Process the task based on priority and time sensitivity
 
-match priority_variable:
+match priority:
     case "high":
         print("\nReminder: ")
-        print(f"'{task_variable}' is a high priority task ", end="")
+        print(f"'{task}' is a high priority task ", end="")
     case "medium":
         print("\nReminder: ")
-        print(f"'{task_variable}' is a medium priority task ", end="")
+        print(f"'{task}' is a medium priority task ", end="")
     case "low":
         print("\nNote: ")
-        print(f"'{task_variable}' is a low priority task. ", end="")
+        print(f"'{task}' is a low priority task. ", end="")
     case _:
         print("Invalid priority level entered.")
 
