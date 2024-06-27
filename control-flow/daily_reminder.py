@@ -33,4 +33,4 @@ else:
     print(" Consider completing it when you have free time.")
 
 # Provide a customised reminder
-print("\nReminder:", reminder)
+print("Reminder:", reminder)
