@@ -10,7 +10,7 @@ priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # Initialise a reminder variable
-reminder = f"'{task}' has an undefined priority level."
+reminder = ""
 
 # Process the task based on priority and time sensitivity
 match priority:
@@ -19,7 +19,7 @@ match priority:
     case "medium":
         reminder = f"'{task}' is a medium priority task"
     case "low":
-        reminder = f"'{task}' is a low priority task."
+        reminder = f"Note: '{task}' is a low priority task"
     case _:
         print("Invalid priority level entered.")
         reminder = None
@@ -32,4 +32,7 @@ if reminder:
         reminder += " Consider completing it when you have free time."
 
     # Provide a customized reminder
-    print("\nReminder:", reminder)
+    if priority == "low":
+        print("\n" + reminder)
+    else:
+        print("\nReminder:", reminder)
