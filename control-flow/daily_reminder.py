@@ -36,3 +36,6 @@ if reminder:
         print("\n" + reminder)
     else:
         print("\nReminder:", reminder)
+
+# Provide a customised reminder
+print("\nReminder: " + reminder)
