@@ -15,24 +15,19 @@ reminder = ""
 # Process the task based on priority and time sensitivity
 match priority:
     case "high":
-        reminder = f"'{task}' is a high priority task"
+        print(f"\nReminder: '{task}' is a high priority task", end="")
     case "medium":
-        reminder = f"'{task}' is a medium priority task"
+        print(f"\nReminder: '{task}' is a medium priority task", end="")
     case "low":
-        reminder = f"Note: '{task}' is a low priority task"
+        print(f"\nNote: '{task}' is a low priority task.", end="")
     case _:
         print("Invalid priority level entered.")
-        reminder = None
 
-if reminder:
-    # Check if the task is time-bound
-    if time_bound == "yes":
-        reminder += " that requires immediate attention today!"
-    else:
-        reminder += " Consider completing it when you have free time."
+# Check if the task is time-bound
+if time_bound == "yes":
+    print(" that requires immediate attention today!")
+else:
+    print(" Consider completing it when you have free time.")
 
-    # Provide a customized reminder
-    if priority == "low":
-        print("\n" + reminder)
-    else:
-        print("\nReminder:", reminder)
+# Provide a customised reminder
+print("Reminder:", reminder)
