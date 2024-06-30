@@ -10,10 +10,7 @@ priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # Initialise a reminder variable
-reminder = f"'{task}' has an undefined priority level."
-
-# Initialise a reminder variable
-reminder = f"'{task}' has an undefined priority level."
+reminder = ""
 
 # Process the task based on priority and time sensitivity
 match priority:
